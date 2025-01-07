@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     children: React.ReactNode;
     onClick?: () => void;
@@ -5,9 +7,13 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const SideButton: React.FC<ButtonProps> = ({ children, onClick, active }) => {
-    const className = active
-        ? "text-left font-semibold w-full h-auto p-3 rounded-xl bg-gray-100 focus:outline-none"
-        : "text-left font-semibold w-full h-auto p-3 rounded-xl hover:bg-gray-100 focus:outline-none";
+    const className = clsx(
+        "text-left font-semibold w-full h-auto p-3 rounded-xl focus:outline-none",
+        {
+            "bg-gray-100": active,
+            "hover:bg-gray-100": !active,
+        }
+    );
 
     return (
         <button className={className} onClick={onClick}>
