@@ -2,22 +2,23 @@
     "frontend": [
         { "title": "React", "color": "text-blue-500" },
         { "title": "Vuejs", "color": "text-green-500" },
-        { "title": "Angular", "color": "text-red-500" }
+        { "title": "Angular", "color": "text-red-500" },
+        { "title": "Typescript", "color": "text-blue-500" }
     ],
     "backend": [
-        { "title": "Node.js", "color": "text-green-700" },
-        { "title": "SpringBoot", "color": "text-green-500" },
+        { "title": "NodeJs", "color": "text-green-700" },
+        { "title": "Spring", "color": "text-green-500" },
         { "title": "Django", "color": "text-teal-500" }
     ],
     "db": [
-        { "title": "Oracle", "color": "text-green-700" },
-        { "title": "MongoDB", "color": "text-green-500" },
-        { "title": "MySQL", "color": "text-teal-500" },
-        { "title": "PostgreSQL", "color": "text-teal-500" }
+        { "title": "Oracle", "color": "text-orange-500" },
+        { "title": "Mongodb", "color": "text-green-500" },
+        { "title": "Mysql", "color": "text-gray-500" },
+        { "title": "Postgresql", "color": "text-gray-500" }
     ],
-    "deployment_hosting": [
+    "deployment": [
         { "title": "Docker", "color": "text-teal-500" },
-        { "title": "Kubernetes", "color": "text-indigo-600" },
-        { "title": "AWS", "color": "text-yellow-500" }
+        { "title": "Kubernetes", "color": "text-indigo-500" },
+        { "title": "Aws", "color": "text-yellow-500" }
     ]
 }

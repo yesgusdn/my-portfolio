@@ -25,6 +25,7 @@ const getIcon = (title: string, color: string) => {
     const iconName1 = `Fa${title}`;
     const iconName2 = `Si${title}`;
     const IconComponent = iconLibraries[iconName1] || iconLibraries[iconName2];
+
     return IconComponent ? (
         <IconComponent size={50} className={color} />
     ) : (
@@ -47,16 +48,19 @@ const TechStack = () => {
 
     return (
         <div className="flex flex-col space-y-2">
-            <div className="font-bold text-2xl">Tech Stack</div>
+            <div className="font-bold text-2xl">기술스택</div>
             {categories.map((category) => (
                 <div key={category} className="font-bold text-md">
-                    {category.toUpperCase()}
-                    <div>
+                    <div className="flex flex-row space-x-1 my-2 bg-white rounded rounded-2xl shadow-md p-2 ">
                         {techStack[category as keyof Tech] ? (
                             techStack[category as keyof Tech].map(
                                 (tech, index) => (
-                                    <div key={index} className={tech.color}>
+                                    <div
+                                        key={index}
+                                        className="flex flex-col w-[100px] items-center hover:scale-110"
+                                    >
                                         {getIcon(tech.title, tech.color)}
+                                        <div>{tech.title}</div>
                                     </div>
                                 )
                             )
@@ -66,7 +70,6 @@ const TechStack = () => {
                     </div>
                 </div>
             ))}
-            <div className="text-green-500"></div>
         </div>
     );
 };

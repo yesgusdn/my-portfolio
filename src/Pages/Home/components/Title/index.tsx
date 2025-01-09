@@ -8,7 +8,7 @@ const Title = () => {
     return (
         <div className="flex justify-between items-center">
             <div className="flex flex-col space-y-2">
-                <div className="font-bold text-4xl">DashBoard</div>
+                <div className="font-bold text-4xl">My Portfolio</div>
                 <div className="text-md">yesgusdn</div>
             </div>
             <div className="flex flex-col w-1/5 h-auto bg-white p-5 rounded-lg shadow-md space-y-1">

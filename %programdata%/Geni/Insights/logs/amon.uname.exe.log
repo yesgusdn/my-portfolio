@@ -1,0 +1,25 @@
+[1644:4] 2025-01-09 17:38:45.977 [0x4290(0) CxCommonApi::LogModuleInfo] [MODULE LOADING] ModuleName amon64.dll, Version [2.0.0.1], ModulePath C:\Program Files\Geni\Insights\temp\amon64.dll ModifiedTime 2023-04-17 12:48:44
+[1644:4] 2025-01-09 17:38:45.979 [0x4290(0) CxSensorPipeClient::Initialize] [Initialize]
+[1644:4] 2025-01-09 17:38:45.979 [0x4290(0) CxThreadPool::Initialize] Queue init : OutputQue 0, nThreadPoolSize : 1
+[1644:4] 2025-01-09 17:38:45.980 [0x4290(183) CxThreadPool::CreateThreadPool] Create 1 WorkerThread
+[1644:4] 2025-01-09 17:38:45.982 [0x4290(0) CAttachMonitor::_InstallHook] [INSTALL_HOOK] GetOpenFileNameW : uname.exe:1644
+[1644:4] 2025-01-09 17:38:45.983 [0x4290(183) CAttachMonitor::_InstallHook] [INSTALL_HOOK] CoCreateInstance : uname.exe:1644
+[1644:4] 2025-01-09 17:38:45.983 [0x4290(183) CAttachMonitor::_InstallHook] [INSTALL_HOOK] DoDragDrop : uname.exe:1644
+[1644:4] 2025-01-09 17:38:45.984 [0x4290(183) CUIAManager::Initialize] [Initialize]
+[1644:4] 2025-01-09 17:38:45.984 [0x4290(183) CUIAManager::Initialize] [/Initialize] SUCCESS
+[1644:4] 2025-01-09 17:38:45.985 [0x4290(536871044) CxDllNotifier::Initialize] [Initialize]
+[1644:4] 2025-01-09 17:38:45.985 [0x4290(183) CxDllNotifier::Initialize] [RegisterDllNotification] 00000000006B00C0
+[1644:4] 2025-01-09 17:38:45.987 [0x4290(183) CxDllNotifier::RegisterCallback] [RegisterCallback] Callback 00007FF927FC5300 Context 00000000006D5330
+[1644:4] 2025-01-09 17:38:45.989 [0x3314(87) CxThreadPool::ThreadEntry] Worker Thread begins
+[1644:4] 2025-01-09 17:38:45.991 [0x3314(1) CxSensorPipeClient::SendJson] [SEND][ReqType:10] {
+   "PID" : 1644,
+   "ProcPath" : "C:\\Program Files\\Git\\usr\\bin\\uname.exe",
+   "ReqType" : "xSensorRequestType_GetAmonProfile"
+}
+
+[1644:4] 2025-01-09 17:38:45.992 [0x3314(183) CxSensorPipeClient::SendJson] [RECV] {
+   "DetectionProcessList" : "ftc_client_main.exe|SKB_messenger.exe|NateonMain.exe|Nateonbiz.exe"
+}
+
+[1644:4] 2025-01-09 17:38:45.993 [0x3314(183) CAttachMonitor::_PipeResponseCallback] Additional DetectionProcessList [ftc_client_main.exe|SKB_messenger.exe|NateonMain.exe|Nateonbiz.exe]
+[1644:4] 2025-01-09 17:38:45.993 [0x3314(183) CAttachMonitor::_PipeResponseCallback] Not Target Process[myself]
