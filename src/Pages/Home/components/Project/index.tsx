@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import Card from "./components/Card";
 
-interface Pjt {
+export interface Pjt {
     pjtId: number;
     title: string;
     tech: string[];
@@ -20,7 +21,9 @@ const Project = () => {
             <div className="flex flex-row">
                 {projects &&
                     projects.map((pjt, index) => (
-                        <div key={index}>{pjt.title}</div>
+                        <div key={index} className="flex flex-row">
+                            <Card pjt={pjt} />
+                        </div>
                     ))}
             </div>
         </div>
