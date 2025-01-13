@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as SiIcons from "react-icons/si";
 
+import { FaPlus } from "react-icons/fa";
+
+import PlusButton from "../../../../Components/Button/PlusButton";
+
 interface TechInfo {
     title: string;
     color: string;
@@ -48,10 +52,15 @@ const TechStack = () => {
 
     return (
         <div className="flex flex-col space-y-2">
-            <div className="font-bold text-2xl">기술스택</div>
+            <div className="flex flex-row items-center justify-between">
+                <div className="font-bold text-2xl p-2">기술스택</div>
+                <PlusButton>
+                    <FaPlus />
+                </PlusButton>
+            </div>
             {categories.map((category) => (
                 <div key={category} className="font-bold text-md">
-                    <div className="flex flex-row space-x-1 my-2 bg-white rounded rounded-2xl shadow-md p-2 ">
+                    <div className="flex flex-row items-center space-x-1 space-y-2 bg-white rounded rounded-2xl shadow-md p-2 ">
                         {techStack[category as keyof Tech] ? (
                             techStack[category as keyof Tech].map(
                                 (tech, index) => (

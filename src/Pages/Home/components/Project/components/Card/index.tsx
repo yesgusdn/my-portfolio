@@ -1,4 +1,4 @@
-import { Pjt } from "..";
+import { Pjt } from "../Carousel";
 
 type CardProps = {
     pjt: Pjt;
@@ -6,7 +6,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ pjt }) => {
     return (
-        <div className="rounded-xl shadow-md bg-white w-64 h-40 p-4">
+        <div className="p-2 rounded rounded-xl shadow-md bg-white h-40">
             {pjt.title}
         </div>
     );

@@ -5,17 +5,17 @@ import Title from "./components/Title";
 
 const Home = () => {
     return (
-        <div className="flex flex-col p-10 space-y-10">
+        <div className="flex flex-col p-10 space-y-20">
             <Title />
             <div className="flex flex-row space-x-10">
                 <div className="w-1/3">
                     <TechStack />
                 </div>
-                <div className="flex flex-col">
-                    <div className="h-3/4">
+                <div className="flex flex-col w-full space-y-10">
+                    <div>
                         <Project />
                     </div>
-                    <div className="h-1/4">
+                    <div>
                         <Experience />
                     </div>
                 </div>

@@ -17,7 +17,7 @@
         { "title": "Postgresql", "color": "text-gray-500" }
     ],
     "deployment": [
-        { "title": "Docker", "color": "text-teal-500" },
+        { "title": "Docker", "color": "text-blue-500" },
         { "title": "Kubernetes", "color": "text-indigo-500" },
         { "title": "Aws", "color": "text-yellow-500" }
     ]

@@ -1,0 +1,16 @@
+{
+    "experiences": [
+        {
+            "id": 1,
+            "name": "삼성청년SW아카데미 (SSAFY)",
+            "startDate": "202201",
+            "endDate": "202212"
+        },
+        {
+            "id": 2,
+            "name": "한솔인티큐브 (HANSOL INTICUBE)",
+            "startDate": "202212",
+            "endDate": ""
+        }
+    ]
+}
