@@ -1,15 +1,16 @@
+import { FaPlus } from "react-icons/fa";
+
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: React.ReactNode;
     onClick?: () => void;
 }
 
-const PlusButton: React.FC<ButtonProps> = ({ children, onClick }) => {
+const PlusButton: React.FC<ButtonProps> = ({ onClick }) => {
     return (
         <div
             onClick={onClick}
-            className="bg-white w-auto h-auto p-2 rounded-lg shadow text-blue-500"
+            className="bg-white w-auto h-auto p-2 rounded-lg shadow text-blue-500 hover:cursor-pointer"
         >
-            {children}
+            <FaPlus />
         </div>
     );
 };

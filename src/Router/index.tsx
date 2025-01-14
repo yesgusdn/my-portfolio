@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../Pages/Home";
 import Sidebar from "../Components/Sidebar";
+import Stack from "../Pages/Stack";
 
 const Router = () => {
     return (
@@ -13,6 +14,7 @@ const Router = () => {
                 <div className="flex-1 p-5 rounded-xl">
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/stack" element={<Stack />} />
                     </Routes>
                 </div>
             </BrowserRouter>

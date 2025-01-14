@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import PlusButton from "../../../../Components/Button/PlusButton";
-import { FaPlus } from "react-icons/fa";
 
 export interface History {
     id: string;
@@ -18,14 +17,12 @@ const Experience = () => {
     }, []);
 
     return (
-        <div className="space-y-5 p-2">
+        <>
             <div className="flex flex-row items-center justify-between">
-                <div className="font-bold text-2xl">경험 및 경력</div>
-                <PlusButton>
-                    <FaPlus />
-                </PlusButton>
+                <div className="font-bold text-2xl p-2">경험 및 경력</div>
+                <PlusButton />
             </div>
-            <div className="bg-white rounded rounded-xl shadow-md p-5">
+            <div className="bg-white rounded rounded-xl shadow-md p-5 mt-1">
                 {rowData?.map((value, index) => (
                     <div
                         key={index}
@@ -38,7 +35,7 @@ const Experience = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </>
     );
 };
 

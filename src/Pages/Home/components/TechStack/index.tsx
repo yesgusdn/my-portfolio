@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as SiIcons from "react-icons/si";
 
-import { FaPlus } from "react-icons/fa";
-
 import PlusButton from "../../../../Components/Button/PlusButton";
 
 interface TechInfo {
@@ -54,9 +52,7 @@ const TechStack = () => {
         <div className="flex flex-col space-y-2">
             <div className="flex flex-row items-center justify-between">
                 <div className="font-bold text-2xl p-2">기술스택</div>
-                <PlusButton>
-                    <FaPlus />
-                </PlusButton>
+                <PlusButton />
             </div>
             {categories.map((category) => (
                 <div key={category} className="font-bold text-md">

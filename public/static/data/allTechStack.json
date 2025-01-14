@@ -1,0 +1,126 @@
+{
+    "web": [
+        {
+            "name": "HTML",
+            "description": "웹 페이지의 구조를 정의하는 마크업 언어",
+            "icon": "html5-color.svg",
+            "selected": false
+        },
+        {
+            "name": "CSS",
+            "description": "웹 페이지의 스타일을 정의하는 스타일시트 언어",
+            "icon": "css3-color.svg",
+            "selected": false
+        },
+        {
+            "name": "JavaScript",
+            "description": "웹 페이지에 동적인 기능을 추가하는 프로그래밍 언어",
+            "icon": "javascript-color.svg",
+            "selected": false
+        },
+        {
+            "name": "React",
+            "description": "사용자 인터페이스 구축을 위한 JavaScript 라이브러리",
+            "icon": "react-color.svg",
+            "selected": false
+        },
+        {
+            "name": "Angular",
+            "description": "웹 애플리케이션 개발을 위한 프레임워크",
+            "icon": "angular-color.svg",
+            "selected": false
+        },
+        {
+            "name": "Vue.js",
+            "description": "사용자 인터페이스 구축을 위한 프로그레시브 JavaScript 프레임워크",
+            "icon": "vuedotjs-color.svg",
+            "selected": false
+        }
+    ],
+    "mobile": [
+        {
+            "name": "Flutter",
+            "description": "Dart 언어로 크로스 플랫폼 모바일 앱을 개발하기 위한 UI 프레임워크",
+            "icon": "flutter-color.svg",
+            "selected": false
+        },
+        {
+            "name": "Swift",
+            "description": "iOS 및 macOS 앱 개발을 위한 프로그래밍 언어",
+            "icon": "swift-color.svg",
+            "selected": false
+        },
+        {
+            "name": "Kotlin",
+            "description": "Android 앱 개발을 위한 프로그래밍 언어",
+            "icon": "kotlin-color.svg",
+            "selected": false
+        }
+    ],
+    "backend": [
+        {
+            "name": "Node.js",
+            "description": "서버 측 JavaScript 실행 환경",
+            "icon": "nodejs-color.svg",
+            "selected": false
+        },
+        {
+            "name": "Python",
+            "description": "다양한 용도로 사용되는 범용 프로그래밍 언어",
+            "icon": "python-color.svg",
+            "selected": false
+        },
+        {
+            "name": "Java",
+            "description": "객체 지향 프로그래밍 언어",
+            "icon": "java-color.svg",
+            "selected": false
+        },
+        {
+            "name": "Spring",
+            "description": "Java 기반 엔터프라이즈 애플리케이션 개발 프레임워크",
+            "icon": "spring-color.svg",
+            "selected": false
+        }
+    ],
+    "database": [
+        {
+            "name": "MySQL",
+            "description": "관계형 데이터베이스 관리 시스템",
+            "icon": "mysql-color.svg",
+            "selected": false
+        },
+        {
+            "name": "PostgreSQL",
+            "description": "객체-관계형 데이터베이스 관리 시스템",
+            "icon": "postgresql-color.svg",
+            "selected": false
+        },
+        {
+            "name": "MongoDB",
+            "description": "NoSQL 데이터베이스",
+            "icon": "mongodb-color.svg",
+            "selected": false
+        }
+    ],
+    "devops": [
+        {
+            "name": "Docker",
+            "description": "컨테이너 기반 가상화 플랫폼",
+            "icon": "docker-color.svg",
+            "selected": false
+        },
+        {
+            "name": "Kubernetes",
+            "description": "컨테이너 오케스트레이션 시스템",
+            "icon": "kubernetes-color.svg",
+            "selected": false
+        },
+        {
+            "name": "AWS",
+            "description": "Amazon Web Services 클라우드 플랫폼",
+            "icon": "aws-color.svg",
+            "selected": false
+        }
+    ]
+}

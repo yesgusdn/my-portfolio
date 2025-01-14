@@ -1,3 +1,5 @@
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+
 import { useEffect, useState } from "react";
 import ArrowButton from "../../../../../../Components/Button/ArrowButton";
 import Card from "../Card";
@@ -29,10 +31,11 @@ const Carousel = () => {
     const cardsToShow: number = 4;
 
     return (
-        <div className="flex flex-row">
-            <div className="w-full relative overflow-hidden">
+        <div className="flex flex-row relative">
+            {/* 캐러셀 구현 */}
+            <div className="w-full overflow-hidden">
                 <div
-                    className="flex transition-transform duration-300"
+                    className="flex transition-transform duration-300 ease-in-out"
                     style={{
                         transform: `translateX(-${
                             (100 / cardsToShow) * currentIdx
@@ -46,19 +49,21 @@ const Carousel = () => {
                     ))}
                 </div>
             </div>
-            <div className="flex flex-col items-end space-y-1 ">
+            <div className="absolute top-1/2 left-1 -translate-y-1/2 -translate-x-1/2">
                 {/* button */}
                 <ArrowButton
                     onClick={handlePrevClick}
                     disabled={currentIdx === 0}
                 >
-                    {"<"}
+                    <FaAngleLeft />
                 </ArrowButton>
+            </div>
+            <div className="absolute top-1/2 right-1 -translate-y-1/2 translate-x-1/2">
                 <ArrowButton
                     onClick={handleNextClick}
                     disabled={currentIdx === 3}
                 >
-                    {">"}
+                    <FaAngleRight />
                 </ArrowButton>
             </div>
         </div>

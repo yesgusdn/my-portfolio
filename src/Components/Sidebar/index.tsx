@@ -18,7 +18,7 @@ const Sidebar = () => {
     useEffect(() => {
         setMenus([
             { id: 1, label: "HOME", url: "" },
-            { id: 2, label: "SKILLS", url: "/skills" },
+            { id: 2, label: "STACK", url: "/stack" },
             { id: 3, label: "HISTORY", url: "/history" },
         ]);
     }, []);

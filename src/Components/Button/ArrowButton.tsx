@@ -11,9 +11,9 @@ const ArrowButton: React.FC<ButtonProps> = ({
 }) => {
     return (
         <button
-            className="mt-2 px-3 py-1 bg-white rounded-lg shawdow-md text-blue-500 font-bold"
             onClick={onClick}
             disabled={disabled}
+            className="bg-white rounded-full p-2"
         >
             {children}
         </button>
